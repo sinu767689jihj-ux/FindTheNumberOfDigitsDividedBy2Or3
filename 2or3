@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class FindTheNumberOfDigitsDividedBy2Or3 {
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of the box:");
+        int n=sc.nextInt();
+        int[] box=new int[n];
+        int i,count=0;
+        for(i=0;i<box.length;i++)
+        {
+            box[i]=sc.nextInt();
+        }
+        //find the number of digits divided by 2 or 3
+        for(i=0;i<box.length;i++)
+        {
+            if(box[i]%2==0||box[i]%3==0)
+            {
+                count+=1;
+            }
+        }
+        System.out.println("Find the number of digits divided by 2 or 3:" + count);
+        sc.close();
+    }
+}

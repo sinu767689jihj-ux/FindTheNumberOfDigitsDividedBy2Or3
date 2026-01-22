@@ -1,1 +1,0 @@
-# FindTheNumberOfDigitsDividedBy2Or3
